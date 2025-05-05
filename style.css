@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* css reset */
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	background-color: lightcoral;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: lightblue;
+}
+
+.about-section {
+	padding: 2rem 1rem;
+}
+
+.about-me-img {
+	width: 100vw;
+	height: 400px;
+	padding: 2rem;
+
+	img {
+		box-shadow: inset;
+		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.mywork-section {
+	background-color: white;
+	display: grid;
+	row-gap: 2rem;
+	padding: 6rem 1.5rem;
+
+	.project-container {
+		box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.3);
+	}
+
+	.screenshot {
+		text-align: center;
+		padding: 4rem 1rem;
+		font-size: 1.6rem;
+		background-color: lightcyan;
+	}
+
+	.project-name {
+		padding: 1rem 2rem;
+	}
+
+	.project-description {
+		font-size: 0.85rem;
+		padding: 0 1.5rem 2.5rem 1rem;
+	}
+}
+
+.contact-section {
+	background-color: cornflowerblue;
+	display: flex;
+	align-items: center;
+
+	.contact-description {
+		text-align: center;
+		padding: 1.5rem 0.75rem 4rem 0.75rem;
+	}
+}
